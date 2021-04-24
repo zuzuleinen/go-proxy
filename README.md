@@ -18,7 +18,7 @@ POST http://localhost:8000
 ```json
 {
   "method": "GET",
-  "url": "http://google.ro",
+  "url": "http://google.com",
   "headers": {
   	"Authentication": "Basic bG9naW46cGFzc3dvcmQ=&quot;,"
   }
