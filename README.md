@@ -56,11 +56,11 @@ db := DB()
 db.Save(id, reqDump, respDump)
 
 // To check current rows of db
-	for k, v := range db.Rows() {
-		fmt.Println("For id", k)
-		fmt.Println("Request", string(v.Request))
-		fmt.Println("Request", string(v.Response))
-	}
+for k, v := range db.Rows() {
+	fmt.Println("For id", k)
+	fmt.Println("Request", string(v.Request))
+	fmt.Println("Request", string(v.Response))
+}
 
 ```
 		
