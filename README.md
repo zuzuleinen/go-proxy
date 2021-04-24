@@ -20,7 +20,7 @@ POST http://localhost:8000
   "method": "GET",
   "url": "http://google.ro",
   "headers": {
-  	"Authentication": "Basic lalala"
+  	"Authentication": "Basic bG9naW46cGFzc3dvcmQ=&quot;,"
   }
 }
 ```
