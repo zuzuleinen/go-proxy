@@ -52,8 +52,8 @@ Each request to server and response from 3rd party sevice is logged in a in-memo
 
 ```golang
 // To save
-	db := DB()
-	db.Save(id, reqDump, respDump)
+db := DB()
+db.Save(id, reqDump, respDump)
 
 // To check current rows of db
 	for k, v := range db.Rows() {
