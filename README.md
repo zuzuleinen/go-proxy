@@ -45,3 +45,24 @@ POST http://localhost:8000
 	"length": -1
 }
 ```
+
+## Storing the request-response
+
+Each request to server and response from 3rd party sevice is logged in a in-memory database:
+
+```golang
+// To save
+	db := DB()
+	db.Save(id, reqDump, respDump)
+
+// To check current rows of db
+
+	for k, v := range db.Rows() {
+		fmt.Println("For id", k)
+		fmt.Println("Request", string(v.Request))
+		fmt.Println("Request", string(v.Response))
+	}
+
+```
+		
+
